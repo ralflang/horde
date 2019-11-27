@@ -1,0 +1,121 @@
+{
+    "name": "ralflang/horde",
+    "description": "Do not use, this is only a test",
+    "type": "horde-application",
+    "homepage": "https://www.horde.org/apps/horde",
+    "license": "LGPL-2",
+    "authors": [
+        {
+            "name": "Jan Schneider",
+            "email": "jan@horde.org",
+            "role": "lead"
+        },
+        {
+            "name": "Michael J Rubinsky",
+            "email": "mrubinsk@horde.org",
+            "role": "lead"
+        },
+        {
+            "name": "Michael Slusarz",
+            "email": "slusarz@horde.org",
+            "role": "lead"
+        },
+        {
+            "name": "Chuck Hagenbuch",
+            "email": "chuck@horde.org",
+            "role": "lead"
+        }
+    ],
+    "version": "5.2.21",
+    "time": "2019-11-27",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
+        },
+        {
+            "url": "https://pear.php.net",
+            "type": "pear"
+        }
+    ],
+    "require": {
+        "horde/horde-installer-plugin": "dev-master",
+        "php": "^5.3 || ^7",
+        "horde/alarm": "dev-master",
+        "horde/argv": "dev-master",
+        "horde/auth": "dev-master",
+        "horde/autoloader": "dev-master",
+        "horde/browser": "dev-master",
+        "horde/core": "dev-master",
+        "horde/date": "dev-master",
+        "horde/exception": "dev-master",
+        "horde/form": "dev-master",
+        "horde/group": "dev-master",
+        "horde/http": "dev-master",
+        "horde/image": "dev-master",
+        "horde/logintasks": "dev-master",
+        "horde/mail": "dev-master",
+        "horde/mime": "dev-master",
+        "horde/nls": "dev-master",
+        "horde/perms": "dev-master",
+        "horde/prefs": "dev-master",
+        "horde/rpc": "dev-master",
+        "horde/serialize": "dev-master",
+        "horde/support": "dev-master",
+        "horde/text_diff": "dev-master",
+        "horde/token": "dev-master",
+        "horde/text_filter": "dev-master",
+        "horde/tree": "dev-master",
+        "horde/url": "dev-master",
+        "horde/util": "dev-master",
+        "horde/view": "dev-master",
+        "horde/vfs": "dev-master",
+        "ext-filter": "*",
+        "ext-gettext": "*",
+        "ext-hash": "*"
+    },
+    "suggest": {
+        "pear-pear.php.net/Net_DNS2": "*",
+        "pear-pear.php.net/Services_Weather": "*",
+        "horde/activesync": "^2.16",
+        "horde/db": "^2",
+        "horde/feed": "^2",
+        "horde/oauth": "^2",
+        "horde/openxchange": "^1",
+        "horde/service_facebook": "^2",
+        "horde/service_twitter": "^2.1",
+        "horde/service_weather": "^2.2",
+        "horde/syncml": "^2",
+        "pear-pear.php.net/Console_Getopt": "*",
+        "pear-pear.php.net/Console_Table": "*",
+        "pear-pear.php.net/File_Find": "*",
+        "pear-pear.php.net/File_Fstab": "*",
+        "ext-iconv": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Horde": "lib/"
+        }
+    },
+    "bin": [
+        "bin/.htaccess",
+        "bin/horde-active-sessions",
+        "bin/horde-alarms",
+        "bin/horde-check-logger",
+        "bin/horde-clear-cache",
+        "bin/horde-crond",
+        "bin/horde-db-migrate",
+        "bin/horde-import-openxchange-prefs",
+        "bin/horde-import-squirrelmail-prefs",
+        "bin/horde-memcache-stats",
+        "bin/horde-pref-remove",
+        "bin/horde-queue-run-tasks",
+        "bin/horde-remove-user-data",
+        "bin/horde-run-task",
+        "bin/horde-sessions-gc",
+        "bin/horde-set-perms",
+        "bin/horde-sql-shell",
+        "bin/horde-themes",
+        "bin/horde-translation"
+    ]
+}
